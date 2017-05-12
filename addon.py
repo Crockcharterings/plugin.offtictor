@@ -26,7 +26,8 @@ from torhelper import TorPost, TorList
 REMOTE_DBG = False
 
 addon       = xbmcaddon.Addon()
-addonpath     = addon.getAddonInfo('path')
+addonpath   = addon.getAddonInfo('path')
+addonpath   = xbmc.translatePath(addonpath).decode('utf-8')
 addonname   = addon.getAddonInfo('name')
 addonid     = addon.getAddonInfo('id')
 
